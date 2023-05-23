@@ -1,15 +1,10 @@
-import { useRouter } from "next/router"
-import { Headline } from 'src/components/Headline'
+import { Post } from 'src/components/Post';
+import { usePost } from 'src/hooks/usePost';
 
 const PostId = () => {
-  const router = useRouter();
+  const {post, user, error, isLoading} = usePost();
   return (
-    <div>
-      <Headline onClick={() => alert("clicked!!!")}>
-        <code className="font-mono font-bold">src/pages/post</code>
-      </Headline>
-      <div>{router.query.id}</div>
-    </div>
+    <Post />
   )
 }
 
