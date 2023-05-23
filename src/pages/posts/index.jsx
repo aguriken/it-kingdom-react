@@ -1,5 +1,4 @@
 import { Inter } from 'next/font/google'
-import { Headline } from 'src/components/Headline'
 import { Posts } from 'src/components/Posts'
 import { Header } from 'src/components/Header'
 
